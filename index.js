@@ -10,7 +10,8 @@ const profileData = {
 // about section data
 const aboutData = {
     text: `I am a Computer Science student passionate about web development, problem solving, and building real-world projects.
-  I enjoy learning new technologies and improving my skills every day.`
+  I enjoy learning new technologies and improving my skills every day.`,
+  image:"pimage/formal_passport_photo.jpeg"
 };
 
 // skills section data
@@ -45,7 +46,7 @@ const educationData = [
         year: "2019",
         institute: "NS DAV Public School",
         location: "Ranchi, Jharkhand",
-        score: "91.8%"
+        score: "91.83%"
     },
 
     {
@@ -53,7 +54,7 @@ const educationData = [
         year: "2021",
         institute: "NS DAV Public School",
         location: "Ranchi, Jharkhand",
-        score: "89.9%"
+        score: "90.50%"
     },
 
     {
@@ -106,6 +107,7 @@ document.getElementById("profile-image").src = profileData.image;
 
 // 3. About section
 document.getElementById("about-text").innerText = aboutData.text;
+document.querySelector(".about-image img").src = aboutData.image;
 
 // 4. Skills function
 
